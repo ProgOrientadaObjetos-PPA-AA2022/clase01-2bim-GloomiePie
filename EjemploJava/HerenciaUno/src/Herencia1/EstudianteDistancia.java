@@ -1,5 +1,5 @@
 
-package herenciauno;
+package Herencia1;
 
 public class EstudianteDistancia extends Estudiante{
     /*1.  Declarar
@@ -41,5 +41,16 @@ public class EstudianteDistancia extends Estudiante{
     public double obtenerMatriculaDistancia(){
         return matriculaDistancia;
     }
-
+    public String toString(){
+        String cadena = String.format("Nombre: %s\n"
+                + "Apellidos: %s\n"
+                + "Identificacion: %s\n"
+                + "Edad: %d\n"
+                + "Numero de asignaturas: %d\n"
+                + "Costo de asignaturas: %.2f\n"
+                + "Costo total: %.2f\n",obtenerNombresEstudiante(), obtenerApellidoEstudiante(),
+                obtenerIdentificacionEstudiante(),obtenerEdadEstudiante(), obtenerNumeroAsignaturas(),
+                obtenerCostoAsignatura(), obtenerMatriculaDistancia());
+        return cadena;
+    }
 }
